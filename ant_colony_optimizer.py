@@ -88,9 +88,3 @@ def hypertune_aco_tsp(adj_matrix, alphas, betas, evaporations, n_ants, Q=100, n_
     print(f"  alpha={best_config[0]}, beta={best_config[1]}, evaporation={best_config[2]}, n_ants={best_config[3]}")
     print(f"  Best Distance: {best_distance:.2f}")
     return best_path, best_distance, best_config
-
-# # Example usage (adjust ranges as needed):
-# alphas = [0.5, 1.0, 2.0]
-# betas = [2.0, 3.0, 5.0]
-# evaporations = [0.3, 0.5, 0.7]
-# Qs = [50, 100, 150]
