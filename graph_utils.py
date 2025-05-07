@@ -112,18 +112,3 @@ def best_route_vizualizer(adj_matrix,city_df,best_path,path,country="India"):
         new_graph.add_edge(route[i], route[i+1], weight=adj_matrix[best_path[i]][best_path[i+1]])
     # Vizualizing the best path
     plot_graph(new_graph,country)
-
-    
-if __name__=="__main__":
-    country = "India"
-    # city_names = get_cities(country)
-    # city_graph = create_graph(city_names,country)
-    # city_graph = read_graph(f"data/{country}_sm.pkl")
-    # plot_graph(city_graph,country)
-    # df , dist = graph_to_adjacency_matrix(f"data/{country}_sm.pkl")
-    # print(dist)
-
-
-
-    
-
